@@ -14,7 +14,7 @@ Die App liest die Datei **/mnt/data/Miete.xlsx** (Tabelle 'Tabelle1').
 
 # Load data
 @st.cache_data
-def load_data(path="/mnt/data/Miete.xlsx"):
+def load_data(path="Miete.xlsx"):
     try:
         df = pd.read_excel(path, sheet_name=0)
     except Exception as e:
